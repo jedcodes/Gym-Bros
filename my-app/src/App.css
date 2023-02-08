@@ -1,0 +1,21 @@
+.App {
+  display: flex;
+  
+}
+
+.Sidebar {
+  padding: 1.5rem;
+  flex: 6%;
+  background-color: black;
+  height: 100vh;
+}
+
+.WorkoutPage {
+  flex: 94%;
+  padding: 2rem;
+}
+
+.Header {
+  display: flex;
+  justify-content: space-between;
+}
