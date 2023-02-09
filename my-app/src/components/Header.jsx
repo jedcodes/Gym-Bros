@@ -1,11 +1,10 @@
 import React from "react";
 import SearchBar from "./SearchBar";
-import { Heading } from "@chakra-ui/react";
 
 const Header = ({ setSearchTerm }) => {
   return (
     <div className="Header">
-      <Heading className="Header__title">GymBros</Heading>
+      <h1 className="Header__title">GymBros</h1>
       <SearchBar setSearchTerm={setSearchTerm} />
     </div>
   );

@@ -1,17 +1,25 @@
 import React from "react";
-import { Flex, Box, Text } from "@chakra-ui/react";
 
-const bodyParts = ["all", "back", "chest", "legs", "arms"];
+const bodyParts = [
+  { text: "all", icon: "🏋🏾", isToggle: false },
+  { text: "back", icon: "🏋🏾", isToggle: false },
+  { text: "chest", icon: "🏋🏾", isToggle: false },
+  { text: "arms", icon: "🏋🏾", isToggle: false },
+  { text: "legs", icon: "🏋🏾", isToggle: false },
+];
 
 const Categlory = () => {
   const renderBodyParts = bodyParts.map((bodyPart, idx) => {
     return (
-      <Box bg="yellow.300" key={idx} w="100px" h="100px" borderRadius="lg">
-        <Text fontSize="xl">{bodyPart}</Text>
-      </Box>
+      <div className="Categlory__items">
+        <div className="Categlory__items--icon">
+          <h4>{bodyPart.icon}</h4>
+        </div>
+        <h5>{bodyPart.text}</h5>
+      </div>
     );
   });
-  return <Flex justifyContent="space-between">{renderBodyParts}</Flex>;
+  return <div className="Categlory">{renderBodyParts}</div>;
 };
 
 export default Categlory;

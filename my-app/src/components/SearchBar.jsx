@@ -1,5 +1,4 @@
 import React from "react";
-import { Input } from "@chakra-ui/react";
 
 const SearchBar = ({ setSearchTerm }) => {
   const handleChange = (event) => {
@@ -7,8 +6,7 @@ const SearchBar = ({ setSearchTerm }) => {
   };
   return (
     <form className="Searchbar">
-      <Input
-        size="md"
+      <input
         className="Searchbar__input"
         type="text"
         onChange={handleChange}
